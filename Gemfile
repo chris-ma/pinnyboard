@@ -23,8 +23,7 @@ gem 'masonry-rails'
 # like button for each image
 gem 'acts_as_votable'
 # AWS storage of images
-gem 'aws-sdk'
-
+gem 'aws-sdk', '< 2.0'
 
 group :production do
   gem 'pg'
