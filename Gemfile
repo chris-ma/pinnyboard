@@ -10,18 +10,25 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# bootstrap grid and styling
 gem 'bootstrap-sass'
+# form for data input
 gem 'simple_form'
+# user managerment
 gem 'devise'
+# image upload
 gem 'paperclip'
+# masonry jquery 
 gem 'masonry-rails'
+# like button for each image
 gem 'acts_as_votable'
+# AWS storage of images
+gem 'aws-sdk'
 
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-
 end
 
 
@@ -30,6 +37,5 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
-
 end
 
