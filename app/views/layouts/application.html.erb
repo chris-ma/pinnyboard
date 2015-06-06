@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pinner</title>
+  <title>Community Pinner</title>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,7 +14,7 @@
   <div class="container">
 
     <div class="navbar-brand">
-      <%= link_to "Pinnyboard", root_path %>
+      <%= link_to "Community Pinner", root_path %>
     </div>
     
     <% if user_signed_in? %>
