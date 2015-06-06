@@ -1,6 +1,7 @@
 <div class="row" id="pin_show">
   <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
+    <div class="panel-heading pin_image">
       <%= image_tag @pin.image.url(:medium) %>
       <h1><%= @pin.title %></h1>
       <p><%= @pin.description %></p>
@@ -9,7 +10,7 @@
       <%= link_to "Back", root_path %>
       <%= link_to "Edit", edit_pin_path %>
       <%= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}%>
-
+      </div>
     </div>
   </div>
 </div>
