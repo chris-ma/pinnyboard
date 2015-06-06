@@ -2,10 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(function(){
-  $('#pins').masonry({
-    itemSelector: '.box',
-    isFitWidth: true
+$(function() {
+  return $('#pins').imagesLoaded(function() {
+    return $('#pins').masonry({
+      itemSelector: '.box',
+      isFitWidth: true
+    });
   });
-
 });
